@@ -28,11 +28,11 @@ try:
         print("ID do cartao: ", id)
 
         # Conecta ao banco de dados SQLite
-        conn = sqlite3.connect('Porta_Main.db')
+        conn = sqlite3.connect('main.db')
         cursor = conn.cursor()
 
         # Consulta o ID no banco de dados
-        cursor.execute("SELECT nome FROM Estagiarios WHERE rfid=?", (id,))
+        cursor.execute("SELECT nome FROM Responsaveis WHERE rfid=?", (id,))
         estagiario = cursor.fetchone()
 
         if estagiario:

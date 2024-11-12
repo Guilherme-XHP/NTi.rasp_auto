@@ -1,10 +1,10 @@
-create database main_porta;
+create database main_porta
 
-use main_porta;
+use main_porta
 
 create table Responsaveis(
 
-    id int primary key auto_increment,
+    id integer primary key autoincrement,
     nome varchar(100),
     rfid int
 
@@ -12,7 +12,7 @@ create table Responsaveis(
 
 create table Entradas(
 
-    id int primary key auto_increment,
+    id integer primary key autoincrement,
     id_responsavel int,
     data_hora datetime,
     foreign key(id_responsavel) references Responsaveis(id)
@@ -21,10 +21,10 @@ create table Entradas(
 
 insert into Responsaveis(nome, rfid) 
 values
-('Guilherme Estagiario', 123456),
+('Guilherme Estagiario', 839415080477),
 ('Cairo Estagiario', 654321),
-('Lemos Estagiario', 987654),
-('Matheus Estagiario', 456789),
-('', 987123),
-('Milton Coordenador', 321987),
+('Lemos Estagiario', 1044916643582),
+('Matheus Estagiario', 838765225570),
+('Estagiario', 16887949010),
+('Milton Coordenador', 632455800377),
 ('Igor Coordenador', 654987);
