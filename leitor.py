@@ -1,5 +1,6 @@
 # Programa: Controle de Acesso RFID com Raspberry Pi
 # Autor: Arduino e Cia
+# Editor: Guilherme-XHP
 
 #!/usr/bin/env python
 
@@ -38,7 +39,7 @@ try:
         if estagiario:
             nome = estagiario[0]
             print(f"Tag RFID valida! Nome: {nome}")
-            for _ in range(8):  # 3 bipes
+            for _ in range(10):  # 10 Tentativas de abrir a tranca 
                 GPIO.output(13, 1)
                 GPIO.output(11, 1)
                 time.sleep(0.1)
