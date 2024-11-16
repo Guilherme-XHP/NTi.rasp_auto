@@ -11,18 +11,21 @@
 ## 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
+
+> Em todos os projetos e de extrema importância um sistema para edição do código, porém, o uso do nano usado no sistema Linux é de bom proveito para edições rápidas. eu pessoalmente utilizo o vscode com ssh e sftp para alteracao de código e testes
+
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 
 ### Automação Porta
-#### Teste
+#### Obrigatórios
 * Raspberry Pi 3 B+
 * Micro SD com o sistema LITE 64bits
 * Leitor RFID
-* 1 Transistor
-* 1 Resistor 10kΩ
-* 1 Led (qualquer cor)
-* 1 Relé
-* 1 Protoboard
+* Protoboard
 
-
-* ter uma máquina `<Windows>`. para criacao e alteracao de codigos
+#### Opcionais (para controle da tranca) 
+* Transistor
+* Resistor 10kΩ
+* Led (qualquer cor)
+* Relé
+* Tranca eletrônica (12v)
