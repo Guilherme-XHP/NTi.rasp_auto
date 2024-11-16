@@ -19,12 +19,16 @@ create table Entradas(
 
 );
 
+/* 
+  A seguinte inserção foi modificada para fins de segurança
+  Os nomes dos estagiários e coordenadores, bem como os números de RFID, foram alterados.
+*/
 insert into Responsaveis(nome, rfid) 
 values
-('Guilherme Estagiario', 839415080477),
-('Cairo Estagiario', 654321),
-('Lemos Estagiario', 1044916643582),
-('Matheus Estagiario', 838765225570),
-('Estagiario', 16887949010),
-('Milton Coordenador', 632455800377),
-('Igor Coordenador', 654987);
+('Estagiario 1', 123456789012),
+('Estagiario 2', 987654321098),
+('Estagiario 3', 112233445566),
+('Estagiario 4', 665544332211),
+('Estagiario 5', 123123123123),
+('Coordenador 1', 456456456456),
+('Coordenador 2', 789789789789);
