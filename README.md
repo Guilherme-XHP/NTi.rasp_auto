@@ -12,7 +12,7 @@ Base do Projeto: https://www.arduinoecia.com.br/modulo-rfid-mfrc522-com-raspberr
 
 ### Milestone Atual
 
-- [x] Automação Básica da Porta (NodeMCU)
+- [x] Automação Básica da Porta (NodeMCU - Primeira Versao) 
 - [x] Automação da Porta (Raspberry Pi)
 - [x] Adição do banco de dados no sistema da porta
 - [x] Teste de Tempo (3 Dias com o sistema ligado)
