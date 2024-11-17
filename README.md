@@ -2,7 +2,7 @@
 
 > Este repositório foi criado para automação de diversas tarefas no NTi da UEMG Ituiutaba.
 
-## Automação Porta 
+## Automação Porta
 
 Este projeto visa melhorar o controle de acesso de estagiários e coordenadores ao NTi por meio de uma solução de automação.
 
@@ -12,7 +12,7 @@ Este projeto visa melhorar o controle de acesso de estagiários e coordenadores 
 - [x] Automação da Porta (Raspberry Pi)
 - [x] Adição do banco de dados no sistema da porta
 - [x] Teste de Tempo (3 Dias com o sistema ligado)
-- [ ] Adição de um contador para a contagem de entradas 
+- [ ] Adição de um contador para a contagem de entradas
 
 ### Pré-requisitos
 
@@ -22,9 +22,10 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Raspberry Pi 3 B+
 * Micro SD com o sistema LITE 64bits
 * Leitor RFID
-* Protoboard
+* Protoboard <!-- Ainda irei Disponibilizar o circuito -->
 
 #### Opcionais (para controle da tranca)
+<!-- Ainda irei Disponibilizar o circuito -->
 * Transistor
 * Resistor 10kΩ
 * Led (qualquer cor)
@@ -60,5 +61,5 @@ Se você deseja contribuir com este projeto, siga estas etapas:
 Este projeto está licenciado sob a MIT License.
 
 ### Futuros Projetos
-- **Home Assistant:** Para integracao geral do NTi (Impressora 3D, Porta, Cameras, Alexa, ETC...).
+- **Home Assistant:** Para integração geral do NTi (Impressora 3D, Porta, Câmeras, Alexa, etc.).
 - **Sistema de Câmeras:** Implementação de um sistema de vigilância por câmeras para melhorar a segurança e monitoramento.
