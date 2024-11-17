@@ -4,9 +4,11 @@
 
 ### Milestone Atual
 
-- [x] Automacao Porta 
-- [ ] Home Assistence
-- [ ] Automacao com Samsung SmartThings
+- [x] Automação Basica Porta (NodeMCU)
+- [x] Automação Porta (Raspi)
+- [x] Adição do banco de dados no sistema da porta
+- [x] Teste de Tempo (4 Dias com o sistema ligado)
+- [] Adição de um contador para a contagem de entradas 
 
 ## 💻 Pré-requisitos
 
@@ -29,3 +31,5 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Led (qualquer cor)
 * Relé
 * Tranca eletrônica (12v)
+
+
