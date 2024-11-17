@@ -14,7 +14,7 @@ Criado a fim de melhorar a entrada e o controle da entrada dos estagiários e co
 - [x] Teste de Tempo (3 Dias com o sistema ligado)
 - [ ] Adição de um contador para a contagem de entradas 
 
-### 💻 Pré-requisitos
+#### 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
@@ -22,14 +22,14 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 
-### Automação Porta
-#### Obrigatórios
+#### Automação Porta
+##### Obrigatórios
 * Raspberry Pi 3 B+
 * Micro SD com o sistema LITE 64bits
 * Leitor RFID
 * Protoboard
 
-#### Opcionais (para controle da tranca) 
+##### Opcionais (para controle da tranca) 
 * Transistor
 * Resistor 10kΩ
 * Led (qualquer cor)
