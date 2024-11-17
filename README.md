@@ -14,7 +14,7 @@ Este projeto visa melhorar o controle de acesso de estagiários e coordenadores 
 - [x] Teste de Tempo (3 Dias com o sistema ligado)
 - [ ] Adição de um contador para a contagem de entradas 
 
-### 💻 Pré-requisitos
+### Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
@@ -58,3 +58,7 @@ Se você deseja contribuir com este projeto, siga estas etapas:
 ### Licença
 
 Este projeto está licenciado sob a MIT License.
+
+### Futuros Projetos
+- **Home Assistant:** Para integracao geral do NTi (Impressora 3D, Porta, Cameras, Alexa, ETC...).
+- **Sistema de Câmeras:** Implementação de um sistema de vigilância por câmeras para melhorar a segurança e monitoramento.
