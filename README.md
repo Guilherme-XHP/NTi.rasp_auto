@@ -1,10 +1,13 @@
 # NTi - Rasp Auto
 
-> Este repositório foi criado para automação de diversas tarefas no NTi da UEMG Ituiutaba.
+Este repositório foi criado para automação de diversas tarefas no NTi da UEMG Ituiutaba.
+
+> Nota: Para todos os projetos, é essencial ter um sistema para edição do código. O uso do nano no sistema Raspberry Pi OS LITE (64 BIT) é útil para edições rápidas. Pessoalmente, utilizo o VS Code com SSH e SFTP para alteração do código e testes.
 
 ## Automação Porta
 
 Este projeto visa melhorar o controle de acesso de estagiários e coordenadores ao NTi por meio de uma solução de automação.
+
 
 ### Milestone Atual
 
@@ -18,9 +21,11 @@ Este projeto visa melhorar o controle de acesso de estagiários e coordenadores 
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
+> Nota: O circuito da Principal e do Relé será disponibilizado em breve.
+
 #### Obrigatórios
 * Raspberry Pi 3 B+
-* Micro SD com o sistema LITE 64bits
+* Micro SD com o sistema Raspberry Pi OS LITE (64 BIT)
 * Leitor RFID
 * Protoboard <!-- Ainda irei Disponibilizar o circuito -->
 
@@ -31,8 +36,6 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Led (qualquer cor)
 * Relé
 * Tranca eletrônica (12v)
-
-> Nota: Para todos os projetos, é essencial ter um sistema para edição do código. O uso do nano no sistema Linux é útil para edições rápidas. Pessoalmente, utilizo o VS Code com SSH e SFTP para alteração do código e testes.
 
 ### Instalação e Uso
 
@@ -59,7 +62,3 @@ Se você deseja contribuir com este projeto, siga estas etapas:
 ### Licença
 
 Este projeto está licenciado sob a MIT License.
-
-### Futuros Projetos
-- **Home Assistant:** Para integração geral do NTi (Impressora 3D, Porta, Câmeras, Alexa, etc.).
-- **Sistema de Câmeras:** Implementação de um sistema de vigilância por câmeras para melhorar a segurança e monitoramento.
