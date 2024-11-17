@@ -18,7 +18,7 @@ Criado a fim de melhorar a entrada e o controle da entrada dos estagiários e co
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
-> Em todos os projetos e de extrema importância um sistema para edição do código, porém, o uso do nano usado no sistema Linux é de bom proveito para edições rápidas. eu pessoalmente utilizo o vscode com ssh e sftp para alteracao de código e testes
+> Em todos os projetos e de extrema importância um sistema para edição do código, porém, o uso do nano usado no sistema Linux é de bom proveito para edições rápidas. eu pessoalmente utilizo o vscode com ssh e sftp para alteração do código e testes
 
 <!---Estes são apenas requisitos de exemplo. Adicionar, duplicar ou remover conforme necessário--->
 
