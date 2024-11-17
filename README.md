@@ -1,6 +1,10 @@
 # NTi - Rasp Auto
 
-> Este GIT foi criado para automacao de coisas Do NTi da UEMG Ituiutaba
+> Este GIT foi criado para automação de coisas Do NTi da UEMG Ituiutaba
+
+## Automação Porta 
+
+Criado a fim de melhorar a entrada e o controle da entrada dos estagiários e coordenadores ao NTi
 
 ### Milestone Atual
 
@@ -10,7 +14,7 @@
 - [x] Teste de Tempo (3 Dias com o sistema ligado)
 - [ ] Adição de um contador para a contagem de entradas 
 
-## 💻 Pré-requisitos
+### 💻 Pré-requisitos
 
 Antes de começar, verifique se você atendeu aos seguintes requisitos:
 
