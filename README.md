@@ -8,7 +8,7 @@
 - [x] Automação Porta (Raspi)
 - [x] Adição do banco de dados no sistema da porta
 - [x] Teste de Tempo (4 Dias com o sistema ligado)
-- [] Adição de um contador para a contagem de entradas 
+- [ ] Adição de um contador para a contagem de entradas 
 
 ## 💻 Pré-requisitos
 
