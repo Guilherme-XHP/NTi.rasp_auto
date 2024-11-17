@@ -8,6 +8,7 @@ Este repositório foi criado para automação de diversas tarefas no NTi da UEMG
 
 Este projeto visa melhorar o controle de acesso de estagiários e coordenadores ao NTi por meio de uma solução de automação.
 
+Base do Projeto: https://www.arduinoecia.com.br/modulo-rfid-mfrc522-com-raspberry-pi-4/
 
 ### Milestone Atual
 
@@ -27,10 +28,9 @@ Antes de começar, verifique se você atendeu aos seguintes requisitos:
 * Raspberry Pi 3 B+
 * Micro SD com o sistema Raspberry Pi OS LITE (64 BIT)
 * Leitor RFID
-* Protoboard <!-- Ainda irei Disponibilizar o circuito -->
+* Protoboard 
 
 #### Opcionais (para controle da tranca)
-<!-- Ainda irei Disponibilizar o circuito -->
 * Transistor
 * Resistor 10kΩ
 * Led (qualquer cor)

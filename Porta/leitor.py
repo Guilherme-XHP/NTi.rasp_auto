@@ -13,13 +13,13 @@ leitorRfid = SimpleMFRC522()
 
 GPIO.setmode(GPIO.BOARD)
 
-# Define os pinos 11 e 13 como saida
-GPIO.setup(11, GPIO.OUT)
-GPIO.setup(13, GPIO.OUT)
+# Definir os pinos 11 e 13 (Basicamente uma adapitacao do original)como saida
+GPIO.setup(11, GPIO.OUT) # Rele
+GPIO.setup(13, GPIO.OUT) # Speaker
 
 try:
     while True:
-        # Apaga os leds
+        # Apaga os leds (pq sim)
         GPIO.output(11, 0)
         GPIO.output(13, 0)
 
@@ -28,11 +28,11 @@ try:
         id, text = leitorRfid.read()
         print("ID do cartao: ", id)
 
-        # Conecta ao banco de dados SQLite
+        # Conecta ao banco do Main.db
         conn = sqlite3.connect('main.db')
         cursor = conn.cursor()
 
-        # Consulta o ID no banco de dados
+        # Consultar o ID no banco
         cursor.execute("SELECT nome FROM Responsaveis WHERE rfid=?", (id,))
         estagiario = cursor.fetchone()
 
