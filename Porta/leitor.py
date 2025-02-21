@@ -8,6 +8,7 @@ import RPi.GPIO as GPIO
 from mfrc522 import SimpleMFRC522
 import time
 import sqlite3
+import os
 
 leitorRfid = SimpleMFRC522()
 
@@ -17,8 +18,15 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(11, GPIO.OUT) # Rele
 GPIO.setup(13, GPIO.OUT) # Speaker
 
+# Variáveis para controle de tentativas
+ultimo_tempo_leitura = {}
+tentativas = {}
+
 try:
     while True:
+        # Limpa o terminal
+        os.system('clear')
+
         # Apaga os leds (pq sim)
         GPIO.output(11, 0)
         GPIO.output(13, 0)
@@ -26,6 +34,10 @@ try:
         print("Aproxime o cartao da leitora...")
 
         id, text = leitorRfid.read()
+        
+        # Limpa o terminal novamente após a leitura do RFID
+        os.system('clear')
+        
         print("ID do cartao: ", id)
 
         # Conecta ao banco do Main.db
@@ -33,12 +45,28 @@ try:
         cursor = conn.cursor()
 
         # Consultar o ID no banco
-        cursor.execute("SELECT nome FROM Responsaveis WHERE rfid=?", (id,))
+        cursor.execute("SELECT id, nome FROM Responsaveis WHERE rfid=?", (id,))
         estagiario = cursor.fetchone()
 
         if estagiario:
-            nome = estagiario[0]
+            id_responsavel, nome = estagiario
             print(f"Tag RFID valida! Nome: {nome}")
+
+            # Verifica o tempo desde a última leitura
+            tempo_atual = time.time()
+            if id in ultimo_tempo_leitura and (tempo_atual - ultimo_tempo_leitura[id]) < 3:
+                tentativas[id] += 1
+            else:
+                tentativas[id] = 1
+
+            ultimo_tempo_leitura[id] = tempo_atual
+
+            print(f"Tentativas: {tentativas[id]}")
+
+            # Insere um novo registro na tabela Entradas
+            cursor.execute("INSERT INTO Entradas (id_responsavel, data_hora, tentativas) VALUES (?, datetime('now'), ?)", (id_responsavel, tentativas[id]))
+            conn.commit()
+
             for _ in range(10):  # 10 Tentativas de abrir a tranca 
                 GPIO.output(13, 1)
                 GPIO.output(11, 1)
